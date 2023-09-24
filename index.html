@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Fightstore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img  class="logo" src="Fightshop logo.png" alt="logo">
+        <nav>
+            <ul>
+                <li><a href="#Bokshandschoenen">Boksen</a></li>
+                <li><a href="#section2">MMA</a></li>
+                <li><a href="#overons">Over ons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="market-2.png" alt="">
+        <div class="row">
+            <div class="col-2">
+                <h1>FIGHT & TRAIN <br>LIKE<br>ANTHONY JOSHUA</h1>
+                <p>Nu in de shop Rival Bokshandschoenen </p>
+                <a href="product.html"class="btn">Koop Hier! &#8594;</a>
+            </div>
+            <div class="col-2">
+            <img src="AJ.png" alt=""> 
+            </div>
+            </div>
+            </div>
+    </header>
+    <main>
+        <section id="Bokshandschoenen">
+            <h2>Bokshandschoenen</h2>
+            <div class="product">
+                <img src="Bokshandschoenen goud:zwart.jpg" alt="Goud/Zwart">
+                <div class="overlay">
+                    <p class="price">Prijs: $89.99</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ColorBlack.jpg" alt="Zwart">
+                <div class="overlay">
+                    <p class="price">Prijs: $74.99</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ColorRed.jpg" alt="Rood">
+                <div class="overlay">
+                    <p class="price">Prijs: $69.99</p>
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <h2>MMA-handschoenen</h2>
+             <section id="Bokshandschoenen">
+            <div class="product">
+                <img src="mma black:gold.jpg" alt="Goud/Zwart">
+                <div class="overlay">
+                    <p class="price">Prijs: $49.99</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="mma black.jpg" alt="Zwart">
+                <div class="overlay">
+                    <p class="price">Prijs: $29.99</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="ColorRed.jpg" alt="Rood">
+                <div class="overlay">
+                    <p class="price">Prijs: $69.99</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact-form">
+            <h2>Contactformulier</h2>
+            <form action="verwerk_formulier.php" method="post">
+                <label for="voornaam">Voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" required><br>
+                
+                <label for="achternaam">Achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" required><br>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="woonplaats">Woonplaats:</label>
+                <input type="text" id="woonplaats" name="woonplaats" required><br>
+                
+                <label for="geboortedatum">Geboortedatum:</label>
+                <input type="date" id="geboortedatum" name="geboortedatum" required><br>
+                
+                <label for="onderwerp">Onderwerp:</label>
+                <input type="text" id="onderwerp" name="onderwerp" required><br>
+                
+                <label for="bericht">Bericht:</label>
+                <textarea id="bericht" name="bericht" rows="4" required></textarea><br>
+                
+                <label for="nieuwsbrief">Inschrijven voor nieuwsbrief:</label>
+                <input type="checkbox" id="nieuwsbrief" name="nieuwsbrief" value="ja">
+                
+                <input type="submit" value="Verzenden">
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section contact">
+              <h3>Contact</h3>
+              <p>Heb je vragen? Neem contact met ons op.</p>
+              <p>Email: INFO@Fightshop.com</p>
+              <p>Telefoon: 06 15585657</p>
+            </div>
+            <div class="footer-section links">
+              <h3>Links</h3>
+              <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/shop">Winkel</a></li>
+                <li><a href="/over-ons">Over Ons</a></li>
+                <li><a href="/contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-section social">
+              <h3>Volg Ons</h3>
+              <a href="https://www.instagram.com/sander.db_/"><img src="instagram.png"></a>
+              <a href="https://www.facebook.com/sander.denbutter"><img src="icons8-facebook-50.png"></a>
+              <a href="https://twitter.com"><img src="icons8-twitter-squared-50.png"></a>
+              <a href="https://www.tiktok.com/@sanquilleoneal"><img src="icons8-tiktok-50.png"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
