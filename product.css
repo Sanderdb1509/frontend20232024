@@ -1,55 +1,64 @@
-
+/* Algemene stijlen */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(255,255,255);
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(112,130,130,1) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(112, 130, 130, 1) 100%);
 }
 
+/* Header stijlen */
 header {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
 }
-header .row{
+
+header .row {
     font-family: 'Anton', sans-serif;
     margin-top: 70px;
 }
-.logo{
+
+.logo {
     float: center;
 }
+
 .shopping-card-2 {
     float: right;
 }
 
+/* Navigatie stijlen */
 nav {
-    position:sticky;
+    position: sticky;
     top: 0px;
-    display: flex; 
+    display: flex;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;
     font-family: monospace;
- }
-nav ul{
+}
+
+nav ul {
     flex: 1;
     text-align: right;
     padding-right: 575px;
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 30px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -60,20 +69,21 @@ nav ul li a::after{
     background: #fff;
     transition: width 0.3s;
 }
-nav ul li a:hover::after{
-width: 50%;
+
+nav ul li a:hover::after {
+    width: 50%;
 }
 
-
-
+/* Hoofdinhoud stijlen */
 main {
     padding: 20px;
 }
 
+/* Productstijlen */
 #Bokshandschoenen .product {
     position: relative;
     display: inline-block;
-    margin: 0 20px; 
+    margin: 0 20px; /* Voeg meer ruimte (horizontaal) tussen de producten toe */
 }
 
 #Bokshandschoenen .product img {
@@ -82,9 +92,8 @@ main {
     background-color: black;
     border: 2px solid grey;
     border-radius: 15px;
-    -webkit-box-shadow:  0px 0px 10px 0px black;
-    box-shadow:  0px 0px 10px 10px gray;
-
+    -webkit-box-shadow: 0px 0px 10px 0px black;
+    box-shadow: 0px 0px 10px 10px gray;
 }
 
 #Bokshandschoenen .overlay {
@@ -93,8 +102,8 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.7); 
-    opacity: 0; 
+    background-color: rgba(128, 128, 128, 0.7); /* Grijze overlay met 70% dekking */
+    opacity: 0; /* Start met de overlay verborgen */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,11 +111,11 @@ main {
     color: white;
     font-weight: bold;
     font-size: 1.5em;
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s; /* Voeg een overgangseffect toe voor een vloeiende weergave */
 }
 
 #Bokshandschoenen .product:hover .overlay {
-    opacity: 1; 
+    opacity: 1; /* Toon de overlay wanneer de muis over het product gaat */
 }
 
 /* Footer stijlen */
@@ -117,13 +126,13 @@ footer {
     padding: 10px;
 }
 
-
+/* Afbeelding stijlen */
 img {
     max-width: 100%;
     height: auto;
 }
 
-
+/* Formulier stijlen */
 form {
     margin-top: 20px;
 }
@@ -132,27 +141,31 @@ label {
     display: block;
     margin-bottom: 10px;
 }
+
 .row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.col-2{ 
+
+.col-2 {
     flex-basis: 50%;
     min-width: 300px;
 }
-.col-2 img{
-max-width: 100%;
-padding: 10px 0;
+
+.col-2 img {
+    max-width: 100%;
+    padding: 10px 0;
 }
-.col-2  h1{
+
+.col-2 h1 {
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: #ff523b;
     color: #fff;
@@ -168,88 +181,88 @@ padding: 10px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
-  }
-  
-  .footer-content {
+    flex-wrap: wrap; /* Zorgt ervoor dat de items naar de volgende regel gaan als er niet genoeg ruimte is */
+}
+
+.footer-content {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; 
-    max-width: 800px; 
+    flex-wrap: wrap; /* Zorgt ervoor dat de items naar de volgende regel gaan als er niet genoeg ruimte is */
+    max-width: 800px; /* Beperk de maximale breedte van de inhoud */
     width: 100%;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
     flex: 1;
     margin: 0 20px;
-    text-align: center; 
-  }
-  
-  .footer h3 {
+    text-align: center; /* Centreer de tekst in elke sectie */
+}
+
+.footer h3 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-  }
-  
-  .footer p {
+}
+
+.footer p {
     font-size: 0.9rem;
-  }
-  
-  .footer ul {
+}
+
+.footer ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer ul li {
+}
+
+.footer ul li {
     margin-bottom: 10px;
-  }
-  
-  .footer a {
+}
+
+.footer a {
     color: #fff;
     text-decoration: none;
     transition: color 0.2s;
-  }
-  
-  .footer a:hover {
-    color: #ffd700; 
-  }
-  
-  .social-icon {
+}
+
+.footer a:hover {
+    color: #ffd700; /* Verander de kleur bij hover */
+}
+
+.social-icon {
     font-size: 1.5rem;
     margin-right: 10px;
     color: #fff;
-  }
-  
+}
 
-  .product {
-    display: flex;
-    align-items: center;
-    margin: 0 20px; 
-  }
-  
-  .product img {
+/* Voeg hier je stijlen toe om de footer aan te passen aan je webshop */
+.product {
+    display: flex; /* Gebruik flexbox om de afbeelding en de tekst naast elkaar weer te geven */
+    align-items: center; /* Centreer verticaal binnen de container */
+    margin: 0 20px; /* Voeg meer ruimte (horizontaal) tussen de producten toe */
+}
+
+.product img {
     max-width: 100%;
     height: auto;
     background-color: black;
     border: 2px solid grey;
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 10px 0px black;
-    box-shadow: 0px 0px 10px 10px gray;
+    box-shadow: 0px 0px 10px 10px grey;
     flex: 1; /* Laat de afbeelding groeien om beschikbare ruimte in te nemen */
-  }
-  
-  .product .overlay {
+}
+
+.product .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(128, 128, 128, 0.7); 
-    opacity: 0; 
+    background-color: rgba(128, 128, 128, 0.7); /* Grijze overlay met 70% dekking */
+    opacity: 0; /* Start met de overlay verborgen */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -257,29 +270,91 @@ padding: 10px 0;
     color: white;
     font-weight: bold;
     font-size: 1.5em;
-    transition: opacity 0.3s; 
-  }
-  
-  .product:hover .overlay {
-    opacity: 1; 
-  }
-
-input[type="radio"] {
-    display: none; 
+    transition: opacity 0.3s; /* Voeg een overgangseffect toe voor een vloeiende weergave */
 }
 
+.product:hover .overlay {
+    opacity: 1; /* Toon de overlay wanneer de muis over het product gaat */
+}
 
-input[type="radio"] + label {
-    display: inline-block;
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
+/* Stijl voor het formuliercontainer */
+#contact-form {
+    background-color: #f7f7f7;
+    padding: 20px;
     border-radius: 5px;
-    margin-right: 10px;
+    margin: 20px auto; /* Plaatst het formulier in het midden van de pagina */
+    max-width: 600px; /* Beperk de maximale breedte van het formulier */
 }
 
+/* Stijl voor formuliertitel */
+#contact-form h2 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center; /* Centreert de titel */
+}
 
-input[type="radio"]:checked + label {
-    background-color:black; 
-    color: #fff; 
+/* Stijl voor formulierlabels */
+#contact-form label {
+    flex-basis: 45%;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Stijl voor formulierinvoervelden */
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="date"] {
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Stijl voor het berichtveld (textarea) */
+#contact-form textarea {
+    flex-basis: 100%; /* Hiermee beslaat het berichtveld de volledige breedte */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical; /* Hiermee wordt alleen verticale resizing toegestaan */
+    min-height: 200px; /* Hiermee stel je een minimale hoogte in voor het berichtveld */
+}
+
+/* Stijl voor het inschrijven voor nieuwsbrief-checkbox */
+#contact-form input[type="checkbox"] {
+    margin-top: 5px;
+    flex-basis: 100%;
+}
+
+/* Stijl voor het verzendknop */
+#contact-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+/* Stijl voor het verzendknop bij hover */
+#contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Media-query voor schermen kleiner dan 768px (typisch voor telefoons) */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Plaats de navigatielinks onder elkaar */
+        text-align: center; /* Centreer de tekst */
+        padding-right: 0; /* Verwijder de rechtervulling */
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Voeg ruimte boven en onder de navigatielinks toe */
+    }
 }
